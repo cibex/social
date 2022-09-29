@@ -22,7 +22,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_search_mail_content](base_search_mail_content/) | 15.0.1.0.1 |  | Base Search Mail Content
-[mail_activity_board](mail_activity_board/) | 15.0.1.1.0 |  | Add Activity Boards
+[mail_activity_board](mail_activity_board/) | 15.0.1.1.1 |  | Add Activity Boards
 [mail_activity_creator](mail_activity_creator/) | 15.0.1.0.0 |  | Show activities creator
 [mail_activity_done](mail_activity_done/) | 15.0.1.0.0 |  | Mail Activity Done
 [mail_activity_partner](mail_activity_partner/) | 15.0.1.0.0 |  | Add Partner to Activities
@@ -34,7 +34,8 @@ addon | version | maintainers | summary
 [mail_outbound_static](mail_outbound_static/) | 15.0.1.0.0 |  | Allows you to configure the from header for a mail server.
 [mail_preview_base](mail_preview_base/) | 15.0.1.0.0 |  | Base to add more previewing options
 [mail_show_follower](mail_show_follower/) | 15.0.1.2.1 |  | Show CC document followers in mails.
-[mail_tracking](mail_tracking/) | 15.0.1.0.1 |  | Email tracking system for all mails sent
+[mail_tracking](mail_tracking/) | 15.0.1.0.2 |  | Email tracking system for all mails sent
+[mass_mailing_partner](mass_mailing_partner/) | 15.0.1.0.0 |  | Link partners with mass-mailing
 
 [//]: # (end addons)
 
