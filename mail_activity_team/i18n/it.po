@@ -32,6 +32,8 @@ msgid "Activity Mixin"
 msgstr ""
 
 #. module: mail_activity_team
+#: model:ir.model.fields,field_description:mail_activity_team.field_ir_actions_server__activity_team_id
+#: model:ir.model.fields,field_description:mail_activity_team.field_ir_cron__activity_team_id
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_team_view_form
 msgid "Activity Team"
 msgstr "Team Attività"
@@ -57,12 +59,6 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_team_view_form
 msgid "Assign to missing activities"
 msgstr "Assegna ad attività mancanti"
-
-#. module: mail_activity_team
-#: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity__team_user_id
-#: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity__user_id
-msgid "Assigned to"
-msgstr ""
 
 #. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_team__create_uid
@@ -137,6 +133,11 @@ msgid "Name"
 msgstr "Nome"
 
 #. module: mail_activity_team
+#: model:ir.model,name:mail_activity_team.model_ir_actions_server
+msgid "Server Action"
+msgstr ""
+
+#. module: mail_activity_team
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity__team_id
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_view_search
 msgid "Team"
@@ -160,6 +161,11 @@ msgid "Team Members"
 msgstr "Membri Team"
 
 #. module: mail_activity_team
+#: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity__team_user_id
+msgid "Team user"
+msgstr ""
+
+#. module: mail_activity_team
 #: model_terms:ir.ui.view,arch_db:mail_activity_team.mail_activity_view_kanban
 msgid "Team:"
 msgstr "Team:"
@@ -175,6 +181,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity_team__res_model_ids
 msgid "Used models"
 msgstr "Modelli usati"
+
+#. module: mail_activity_team
+#: model:ir.model.fields,field_description:mail_activity_team.field_mail_activity__user_id
+msgid "User"
+msgstr ""
 
 #. module: mail_activity_team
 #: model:ir.model,name:mail_activity_team.model_res_users
