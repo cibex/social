@@ -30,6 +30,7 @@ addon | version | maintainers | summary
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 15.0.1.0.0 |  | Adding attachment on the object by sending this one
 [mail_autosubscribe](mail_autosubscribe/) | 15.0.1.0.3 |  | Automatically subscribe partners to its company's business documents
 [mail_debrand](mail_debrand/) | 15.0.1.2.4 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
+[mail_layout_force](mail_layout_force/) | 15.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Force a mail layout on selected email templates
 [mail_notification_custom_subject](mail_notification_custom_subject/) | 15.0.1.0.2 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Apply a custom subject to mail notifications
 [mail_optional_autofollow](mail_optional_autofollow/) | 15.0.1.0.0 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
 [mail_optional_follower_notification](mail_optional_follower_notification/) | 15.0.1.0.1 |  | Choose to notify followers on mail.compose.message
@@ -39,7 +40,7 @@ addon | version | maintainers | summary
 [mail_quoted_reply](mail_quoted_reply/) | 15.0.1.0.1 |  | Make a reply using a message
 [mail_restrict_follower_selection](mail_restrict_follower_selection/) | 15.0.1.0.0 |  | Define a domain from which followers can be selected
 [mail_show_follower](mail_show_follower/) | 15.0.1.2.2 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Show CC document followers in mails.
-[mail_tracking](mail_tracking/) | 15.0.2.0.0 |  | Email tracking system for all mails sent
+[mail_tracking](mail_tracking/) | 15.0.2.0.1 |  | Email tracking system for all mails sent
 [mail_tracking_mailgun](mail_tracking_mailgun/) | 15.0.1.1.0 |  | Mail tracking and Mailgun webhooks integration
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 15.0.1.0.0 |  | Improve mass mailing email tracking
 [mass_mailing_custom_unsubscribe](mass_mailing_custom_unsubscribe/) | 15.0.1.0.0 |  | Know and track (un)subscription reasons, GDPR compliant
