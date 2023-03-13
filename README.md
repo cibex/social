@@ -36,6 +36,7 @@ addon | version | maintainers | summary
 [mail_optional_follower_notification](mail_optional_follower_notification/) | 15.0.1.0.1 |  | Choose to notify followers on mail.compose.message
 [mail_outbound_static](mail_outbound_static/) | 15.0.1.0.0 |  | Allows you to configure the from header for a mail server.
 [mail_parent_recipient](mail_parent_recipient/) | 15.0.1.0.0 |  | Send email to parent partner if partner's email is empty
+[mail_post_defer](mail_post_defer/) | 15.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Faster and cancellable outgoing messages
 [mail_preview_base](mail_preview_base/) | 15.0.1.0.0 |  | Base to add more previewing options
 [mail_quoted_reply](mail_quoted_reply/) | 15.0.1.0.1 |  | Make a reply using a message
 [mail_restrict_follower_selection](mail_restrict_follower_selection/) | 15.0.1.0.0 |  | Define a domain from which followers can be selected
@@ -44,6 +45,7 @@ addon | version | maintainers | summary
 [mail_tracking_mailgun](mail_tracking_mailgun/) | 15.0.1.1.0 |  | Mail tracking and Mailgun webhooks integration
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 15.0.1.0.0 |  | Improve mass mailing email tracking
 [mass_mailing_custom_unsubscribe](mass_mailing_custom_unsubscribe/) | 15.0.1.0.0 |  | Know and track (un)subscription reasons, GDPR compliant
+[mass_mailing_list_dynamic](mass_mailing_list_dynamic/) | 15.0.1.0.0 |  | Mass mailing lists that get autopopulated
 [mass_mailing_partner](mass_mailing_partner/) | 15.0.1.0.0 |  | Link partners with mass-mailing
 [mass_mailing_resend](mass_mailing_resend/) | 15.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Resend mass mailings
 [microsoft_outlook_single_tenant](microsoft_outlook_single_tenant/) | 15.0.2.0.0 |  | Microsoft Outlook Single Tenant (DEPRECATED)
