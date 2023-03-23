@@ -22,6 +22,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_search_mail_content](base_search_mail_content/) | 15.0.1.0.1 |  | Base Search Mail Content
+[email_template_qweb](email_template_qweb/) | 15.0.1.0.0 |  | Use the QWeb templating mechanism for emails
 [mail_activity_board](mail_activity_board/) | 15.0.2.0.0 |  | Add Activity Boards
 [mail_activity_creator](mail_activity_creator/) | 15.0.1.0.0 |  | Show activities creator
 [mail_activity_done](mail_activity_done/) | 15.0.1.0.1 |  | Mail Activity Done
@@ -34,7 +35,7 @@ addon | version | maintainers | summary
 [mail_notification_custom_subject](mail_notification_custom_subject/) | 15.0.1.0.2 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Apply a custom subject to mail notifications
 [mail_optional_autofollow](mail_optional_autofollow/) | 15.0.1.0.0 |  | Choose if you want to automatically add new recipients as followers on mail.compose.message
 [mail_optional_follower_notification](mail_optional_follower_notification/) | 15.0.1.0.1 |  | Choose to notify followers on mail.compose.message
-[mail_outbound_static](mail_outbound_static/) | 15.0.1.0.0 |  | Allows you to configure the from header for a mail server.
+[mail_outbound_static](mail_outbound_static/) | 15.0.1.0.1 |  | Allows you to configure the from header for a mail server.
 [mail_parent_recipient](mail_parent_recipient/) | 15.0.1.0.0 |  | Send email to parent partner if partner's email is empty
 [mail_post_defer](mail_post_defer/) | 15.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Faster and cancellable outgoing messages
 [mail_preview_base](mail_preview_base/) | 15.0.1.0.0 |  | Base to add more previewing options
