@@ -641,8 +641,7 @@ class TestMailTracking(TransactionCase):
             )
             mail, tracking = self.mail_send(self.recipient.email)
             self.assertEqual(
-                "data-odoo-tracking-email found",
-                tracking.error_description
+                "data-odoo-tracking-email found", tracking.error_description
             )
 
             # now we change the system parameter "mail_tracking.img.disable"
@@ -652,6 +651,5 @@ class TestMailTracking(TransactionCase):
             )
             mail, tracking = self.mail_send(self.recipient.email)
             self.assertEqual(
-                "data-odoo-tracking-email not found",
-                tracking.error_description
+                "data-odoo-tracking-email not found", tracking.error_description
             )
