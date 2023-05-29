@@ -23,6 +23,20 @@ class IrMailServer(models.Model):
         match = re.search(r'<img[^>]*data-odoo-tracking-email=["\']([0-9]*)["\']', body)
         return str(match.group(1)) if match and match.group(1) else False
 
+    def _tracking_img_disabled(self, tracking_email_id):
+        # while tracking_email_id is not needed in this implementation, it can
+        # be useful for other addons extending this function to make a more
+        # fine-grained decision
+        return self.env["ir.config_parameter"].sudo().get_param(
+            "mail_tracking.tracking_img_disabled", False
+        )
+
+    def _tracking_img_remove(self, body):
+        return re.sub(
+            r'<img[^>]*data-odoo-tracking-email=["\'][0-9]*["\'][^>]*>',
+            "", body
+        )
+
     def build_email(
         self,
         email_from,
@@ -44,6 +58,8 @@ class IrMailServer(models.Model):
         tracking_email_id = self._tracking_email_id_body_get(body)
         if tracking_email_id:
             headers = self._tracking_headers_add(tracking_email_id, headers)
+            if self._tracking_img_disabled(tracking_email_id):
+                body = self._tracking_img_remove(body)
         msg = super(IrMailServer, self).build_email(
             email_from=email_from,
             email_to=email_to,
