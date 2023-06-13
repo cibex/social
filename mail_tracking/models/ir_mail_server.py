@@ -56,9 +56,26 @@ class IrMailServer(models.Model):
         body_alternative=None,
         subtype_alternative="plain",
     ):
+        # Unfortunately we currently have to extract the mail.tracking.email
+        # record id from the tracking image in the body here as the core
+        # mail module does not allow headers to be inserted in the
+        # MailMail._send_prepare_values function.
+        # Things to consider before refactoring this:
+        # - There are third party modules completely replacing the
+        #   MailMail._send function, so even when a future version
+        #   of the core mail module supports adding headers there, we might
+        #   want to wait a little until this feature has trickled through.
+        # - While it would be possible to find the mail.tracking.email
+        #   record via the message_id and the email_to criteria, this
+        #   would rely on the message having no duplicate recipient
+        #   (e.g. different contacts having the same email address) and
+        #   no other module inheriting the _send_prepare_values function
+        #   modifying the email_to parameter.
         tracking_email_id = self._tracking_email_id_body_get(body)
         if tracking_email_id:
             headers = self._tracking_headers_add(tracking_email_id, headers)
+            # Only after the X-Odoo-MailTracking-ID header is set we can remove
+            # the tracking image in case it's to be disabled
             if self._tracking_img_disabled(tracking_email_id):
                 body = self._tracking_img_remove(body)
         msg = super(IrMailServer, self).build_email(
