@@ -5,7 +5,6 @@ from odoo import models
 
 
 class MailMessage(models.Model):
-
     _inherit = "mail.message"
 
     def _prep_quoted_reply_body(self):
@@ -48,4 +47,10 @@ class MailMessage(models.Model):
             "force_email": True,
             "default_partner_ids": self._default_reply_partner(),
         }
+
+        # If the original message had a subject, we use it as a base for the
+        # new subject, adding a "Re:" at the beginning.
+        if self.subject:
+            action["context"]["default_subject"] = f"Re: {self.subject}"
+
         return action
