@@ -23,6 +23,7 @@ addon | version | maintainers | summary
 --- | --- | --- | ---
 [base_search_mail_content](base_search_mail_content/) | 15.0.1.0.1 |  | Base Search Mail Content
 [email_template_qweb](email_template_qweb/) | 15.0.1.0.0 |  | Use the QWeb templating mechanism for emails
+[fetchmail_mail_activity_team_activity](fetchmail_mail_activity_team_activity/) | 15.0.1.0.0 |  | * Uses mail.activity.team to configure automatic activities when mails arrive for the specified models. * The configuration to add RMA and PO models (Settings --> Technical --> Activity Teams menu)
 [mail_activity_board](mail_activity_board/) | 15.0.2.0.0 |  | Add Activity Boards
 [mail_activity_creator](mail_activity_creator/) | 15.0.1.0.0 |  | Show activities creator
 [mail_activity_done](mail_activity_done/) | 15.0.1.0.1 |  | Mail Activity Done
@@ -30,6 +31,7 @@ addon | version | maintainers | summary
 [mail_activity_team](mail_activity_team/) | 15.0.2.1.0 |  | Add Teams to Activities
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 15.0.1.0.0 |  | Adding attachment on the object by sending this one
 [mail_autosubscribe](mail_autosubscribe/) | 15.0.1.0.3 |  | Automatically subscribe partners to its company's business documents
+[mail_composer_cc_bcc](mail_composer_cc_bcc/) | 15.0.1.0.0 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_debrand](mail_debrand/) | 15.0.1.2.4 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
 [mail_layout_force](mail_layout_force/) | 15.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Force a mail layout on selected email templates
 [mail_notification_custom_subject](mail_notification_custom_subject/) | 15.0.1.0.2 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Apply a custom subject to mail notifications
