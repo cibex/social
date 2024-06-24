@@ -26,6 +26,7 @@ setuptools.setup(
         'odoo-addon-mail_improved_tracking_value>=15.0dev,<15.1dev',
         'odoo-addon-mail_layout_force>=15.0dev,<15.1dev',
         'odoo-addon-mail_layout_preview>=15.0dev,<15.1dev',
+        'odoo-addon-mail_no_user_assign_notification>=15.0dev,<15.1dev',
         'odoo-addon-mail_notification_custom_subject>=15.0dev,<15.1dev',
         'odoo-addon-mail_optional_autofollow>=15.0dev,<15.1dev',
         'odoo-addon-mail_optional_follower_notification>=15.0dev,<15.1dev',
@@ -49,6 +50,7 @@ setuptools.setup(
         'odoo-addon-mass_mailing_partner>=15.0dev,<15.1dev',
         'odoo-addon-mass_mailing_resend>=15.0dev,<15.1dev',
         'odoo-addon-microsoft_outlook_single_tenant>=15.0dev,<15.1dev',
+        'odoo-addon-outgoing_email_by_model>=15.0dev,<15.1dev',
     ],
     classifiers=[
         'Programming Language :: Python',
