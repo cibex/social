@@ -14,7 +14,7 @@ class TestMessageReply(TransactionCase):
         )
         # pylint: disable=C8107
         message = partner.message_post(
-            body="demo message",
+            body="demo message<!-- test comment -->",
             message_type="email",
             partner_ids=self.env.ref("base.partner_demo").ids,
         )
@@ -29,6 +29,10 @@ class TestMessageReply(TransactionCase):
             )
         )
         action = message.reply_message()
+
+        quote_body = action.get("context", {}).get("quote_body", "")
+        self.assertFalse("<!-- test comment -->" in quote_body)
+
         wizard = (
             self.env[action["res_model"]].with_context(**action["context"]).create({})
         )

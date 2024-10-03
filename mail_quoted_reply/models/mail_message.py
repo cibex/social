@@ -1,6 +1,8 @@
 # Copyright 2021 Creu Blanca
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
+import re
+
 from odoo import _, models
 from odoo.tools import format_datetime
 
@@ -9,7 +11,7 @@ class MailMessage(models.Model):
     _inherit = "mail.message"
 
     def _prep_quoted_reply_body(self):
-        return """
+        quoted_reply_body = """
             <div style="margin: 0px; padding: 0px;">
             <p style="margin:0px 0 12px 0;box-sizing:border-box;">
             <br />
@@ -35,6 +37,9 @@ class MailMessage(models.Model):
             str_subject=_("Subject"),
             str_from=_("From"),
         )
+        regex = "(<!--.*?-->)"
+        quoted_reply_body = re.sub(regex, "", quoted_reply_body, 0, re.DOTALL)
+        return quoted_reply_body
 
     def _default_reply_partner(self):
         return self.env["res.partner"].find_or_create(self.email_from).ids
