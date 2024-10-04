@@ -28,7 +28,7 @@ addon | version | maintainers | summary
 [mail_activity_board](mail_activity_board/) | 16.0.1.1.1 |  | Add Activity Boards
 [mail_activity_done](mail_activity_done/) | 16.0.1.2.0 |  | Mail Activity Done
 [mail_activity_partner](mail_activity_partner/) | 16.0.1.0.0 |  | Add Partner to Activities
-[mail_activity_plan](mail_activity_plan/) | 16.0.1.0.0 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Mail activity plan
+[mail_activity_plan](mail_activity_plan/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Mail activity plan
 [mail_activity_reminder](mail_activity_reminder/) | 16.0.1.0.0 |  | Reminder notifications about planned activities
 [mail_activity_team](mail_activity_team/) | 16.0.1.0.1 |  | Add Teams to Activities
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 16.0.1.1.0 |  | Adding attachment on the object by sending this one
@@ -36,6 +36,7 @@ addon | version | maintainers | summary
 [mail_composer_cc_bcc](mail_composer_cc_bcc/) | 16.0.2.0.1 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_composer_cc_bcc_account](mail_composer_cc_bcc_account/) | 16.0.2.0.0 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners for invoices.
 [mail_debrand](mail_debrand/) | 16.0.1.0.2 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
+[mail_discuss_security](mail_discuss_security/) | 16.0.1.0.0 | [![legalsylvain](https://github.com/legalsylvain.png?size=30px)](https://github.com/legalsylvain) | Add a group to display 'Discuss' Application menu entry
 [mail_drop_target](mail_drop_target/) | 16.0.1.1.0 |  | Attach emails to Odoo by dragging them from your desktop
 [mail_gateway](mail_gateway/) | 16.0.1.0.1 |  | Set a gateway
 [mail_gateway_telegram](mail_gateway_telegram/) | 16.0.1.0.1 |  | Set a gateway for telegram
