@@ -5,10 +5,21 @@
         <field name="inherit_id" ref="mail.email_compose_message_wizard_form" />
         <field name="arch" type="xml">
             <xpath expr="//field[@name='body']" position="after">
-                <field name="is_separate_body" invisible="1"/>
-                <field name="reply_body" attrs="{'readonly': [('is_reply_readonly', '=', True)], 'invisible': [('is_separate_body', '=', False)]}" force_save="1"/>
-                <label for="is_reply_readonly" attrs="{'invisible': [('is_separate_body', '=', False)]}"/>
-                <field name="is_reply_readonly" widget="boolean_toggle" attrs="{'invisible': [('is_separate_body', '=', False)]}"/>
+                <field name="is_separate_body" invisible="1" />
+                <field
+                    name="reply_body"
+                    attrs="{'readonly': [('is_reply_readonly', '=', True)], 'invisible': [('is_separate_body', '=', False)]}"
+                    force_save="1"
+                />
+                <label
+                    for="is_reply_readonly"
+                    attrs="{'invisible': [('is_separate_body', '=', False)]}"
+                />
+                <field
+                    name="is_reply_readonly"
+                    widget="boolean_toggle"
+                    attrs="{'invisible': [('is_separate_body', '=', False)]}"
+                />
             </xpath>
         </field>
     </record>
