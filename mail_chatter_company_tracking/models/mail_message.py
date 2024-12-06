@@ -6,18 +6,11 @@ class Message(models.Model):
 
     def _message_format(self, fnames):
         vals_list = super()._message_format(fnames)
-        for pos, vals in enumerate(vals_list):
-            tracking_ids = map(lambda x: x.get("id"), vals["tracking_value_ids"])
-            trackings = self.env["mail.tracking.value"].browse(tracking_ids)
-            tracking_value_ids = []
-            for tracking in trackings:
-                tracking_value_ids.append(
+        for vals in vals_list:
+            for tracking_value in vals["tracking_value_ids"]:
+                tracking = self.env["mail.tracking.value"].browse(tracking_value["id"])
+                tracking_value.update(
                     {
-                        "id": tracking.id,
-                        "changed_field": tracking.field_desc,
-                        "old_value": tracking.get_old_display_value()[0],
-                        "new_value": tracking.get_new_display_value()[0],
-                        "field_type": tracking.field_type,
                         "company_name": (
                             tracking.company_id.name
                             if self.env[tracking.field.model]
@@ -27,5 +20,4 @@ class Message(models.Model):
                         ),
                     }
                 )
-            vals_list[pos]["tracking_value_ids"] = tracking_value_ids
         return vals_list
