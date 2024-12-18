@@ -33,8 +33,11 @@ class MailMessage(models.Model):
         """.format(
             email_from=html_escape(self.email_from),
             date=format_datetime(self.env, self.date),
-            subject=html_escape(self.subject),  
-            body=self._get_sanitized_body(),
+            subject=html_escape(self.subject),
+            body=self.body,
+            # @TODO cannot be used until task https://odoo.cbx.c/web#id=165819&cids=1&menu_id=768&model=project.task&view_type=form is done
+            # sanitizing the body removes comments and comments are still needed for some functionality regarding mail signature
+            # body=self._get_sanitized_body()
             signature=self.env.user.signature,
             str_date=_("Date"),
             str_subject=_("Subject"),
