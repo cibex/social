@@ -44,3 +44,32 @@ class TestMessageReply(TransactionCase):
         )
         self.assertTrue(new_message)
         self.assertEqual(1, len(new_message))
+
+    def test_reply_separate_body(self):
+        self.env["ir.config_parameter"].sudo().create(
+            {
+                "key": "mail_quoted_reply.separate_reply_body",
+                "value": "True",
+            }
+        )
+        partner = self.env["res.partner"].create({"name": "demo partner"})
+        message = partner.message_post(
+            body="demo message",
+            message_type="email",
+            partner_ids=self.env.ref("base.partner_demo").ids,
+        )
+        partner.invalidate_recordset()
+        action = message.reply_message()
+        wizard = (
+            self.env[action["res_model"]].with_context(**action["context"]).create({})
+        )
+        wizard._onchange_template_id_wrapper()
+        self.assertTrue("<p>demo message</p>" in wizard.reply_body)
+        wizard.action_send_mail()
+        new_message = partner.message_ids.filtered(
+            lambda r: r.message_type != "notification" and r != message
+        )
+        self.assertTrue(new_message)
+        self.assertEqual(1, len(new_message))
+        new_message = new_message[0]
+        self.assertTrue("<p>demo message</p>" in new_message.body)
