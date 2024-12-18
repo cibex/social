@@ -4,12 +4,16 @@
 import re
 
 from odoo import _, models
-from odoo.tools import format_datetime
+from odoo.tools import format_datetime, html_sanitize
 from odoo.tools.misc import html_escape
 
 
 class MailMessage(models.Model):
     _inherit = "mail.message"
+
+    def _get_sanitized_body(self):
+        self.ensure_one()
+        return html_sanitize(self.body)
 
     def _prep_quoted_reply_body(self):
         quoted_reply_body = """
@@ -31,8 +35,8 @@ class MailMessage(models.Model):
         """.format(
             email_from=html_escape(self.email_from),
             date=format_datetime(self.env, self.date),
-            subject=html_escape(self.subject),
-            body=self.body,
+            subject=html_escape(self.subject),  
+            body=self._get_sanitized_body(),
             signature=self.env.user.signature,
             str_date=_("Date"),
             str_subject=_("Subject"),
