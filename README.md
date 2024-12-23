@@ -33,9 +33,10 @@ addon | version | maintainers | summary
 [mail_activity_team](mail_activity_team/) | 15.0.2.1.1 |  | Add Teams to Activities
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 15.0.1.0.0 |  | Adding attachment on the object by sending this one
 [mail_autosubscribe](mail_autosubscribe/) | 15.0.1.0.3 |  | Automatically subscribe partners to its company's business documents
-[mail_composer_cc_bcc](mail_composer_cc_bcc/) | 15.0.1.1.1 | [![hailangvn2023](https://github.com/hailangvn2023.png?size=30px)](https://github.com/hailangvn2023) | This module enables sending mail to CC and BCC partners in mail composer form.
+[mail_composer_cc_bcc](mail_composer_cc_bcc/) | 15.0.1.2.0 | [![trisdoan](https://github.com/trisdoan.png?size=30px)](https://github.com/trisdoan) | This module enables sending mail to CC and BCC partners in mail composer form.
 [mail_debrand](mail_debrand/) | 15.0.1.2.4 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) [![joao-p-marques](https://github.com/joao-p-marques.png?size=30px)](https://github.com/joao-p-marques) | Remove Odoo branding in sent emails Removes anchor <a href odoo.com togheder with it's parent ( for powerd by) form all the templates removes any 'odoo' that are in tempalte texts > 20characters
 [mail_drop_target](mail_drop_target/) | 15.0.1.0.1 |  | Attach emails to Odoo by dragging them from your desktop
+[mail_forward](mail_forward/) | 15.0.1.0.1 |  | Forward messages from the chatter of any document to other users.
 [mail_improved_tracking_value](mail_improved_tracking_value/) | 15.0.1.0.0 |  | Improves tracking changed values for certain type of fields.Adds a user-friendly view to consult them.
 [mail_layout_force](mail_layout_force/) | 15.0.1.0.1 | [![ivantodorovich](https://github.com/ivantodorovich.png?size=30px)](https://github.com/ivantodorovich) | Force a mail layout on selected email templates
 [mail_layout_preview](mail_layout_preview/) | 15.0.0.1.0 |  | Preview email templates in the browser
@@ -49,10 +50,12 @@ addon | version | maintainers | summary
 [mail_post_defer](mail_post_defer/) | 15.0.1.0.0 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Faster and cancellable outgoing messages
 [mail_preview_audio](mail_preview_audio/) | 15.0.1.0.0 |  | Allow to preview audio files
 [mail_preview_base](mail_preview_base/) | 15.0.1.0.0 |  | Base to add more previewing options
+[mail_print](mail_print/) | 15.0.1.1.0 |  | Print messages from the chatter of any document.
 [mail_quoted_reply](mail_quoted_reply/) | 15.0.1.0.3 |  | Make a reply using a message
 [mail_restrict_follower_selection](mail_restrict_follower_selection/) | 15.0.1.0.0 |  | Define a domain from which followers can be selected
+[mail_save_as_template_security](mail_save_as_template_security/) | 15.0.1.0.0 | [![tisho99](https://github.com/tisho99.png?size=30px)](https://github.com/tisho99) | Restrict save as new template button from the send email wizard
 [mail_send_copy](mail_send_copy/) | 15.0.1.0.0 |  | Send to you a copy of each mail sent by Odoo
-[mail_show_follower](mail_show_follower/) | 15.0.1.2.2 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Show CC document followers in mails.
+[mail_show_follower](mail_show_follower/) | 15.0.1.4.1 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Show CC document followers in mails.
 [mail_tracking](mail_tracking/) | 15.0.3.1.0 |  | Email tracking system for all mails sent
 [mail_tracking_mailgun](mail_tracking_mailgun/) | 15.0.1.1.1 |  | Mail tracking and Mailgun webhooks integration
 [mail_tracking_mass_mailing](mail_tracking_mass_mailing/) | 15.0.1.0.0 |  | Improve mass mailing email tracking
