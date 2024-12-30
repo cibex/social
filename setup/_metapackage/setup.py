@@ -20,6 +20,7 @@ setuptools.setup(
         'odoo-addon-mail_activity_reply_creator>=16.0dev,<16.1dev',
         'odoo-addon-mail_activity_team>=16.0dev,<16.1dev',
         'odoo-addon-mail_attach_existing_attachment>=16.0dev,<16.1dev',
+        'odoo-addon-mail_attach_existing_attachment_account>=16.0dev,<16.1dev',
         'odoo-addon-mail_autosubscribe>=16.0dev,<16.1dev',
         'odoo-addon-mail_composer_cc_bcc>=16.0dev,<16.1dev',
         'odoo-addon-mail_composer_cc_bcc_account>=16.0dev,<16.1dev',
@@ -55,6 +56,7 @@ setuptools.setup(
         'odoo-addon-mass_mailing_partner>=16.0dev,<16.1dev',
         'odoo-addon-mass_mailing_resend>=16.0dev,<16.1dev',
         'odoo-addon-mass_mailing_unique>=16.0dev,<16.1dev',
+        'odoo-addon-outgoing_email_by_model>=16.0dev,<16.1dev',
     ],
     classifiers=[
         'Programming Language :: Python',
