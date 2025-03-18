@@ -25,13 +25,13 @@ addon | version | maintainers | summary
 [base_user_signature](base_user_signature/) | 16.0.1.0.0 | [![imlopes](https://github.com/imlopes.png?size=30px)](https://github.com/imlopes) | Base User Signature
 [email_template_qweb](email_template_qweb/) | 16.0.1.0.0 |  | Use the QWeb templating mechanism for emails
 [fetchmail_thread_default](fetchmail_thread_default/) | 16.0.1.0.0 |  | Post unkonwn messages to an existing thread
-[mail_activity_board](mail_activity_board/) | 16.0.1.1.1 |  | Add Activity Boards
-[mail_activity_done](mail_activity_done/) | 16.0.1.2.0 |  | Mail Activity Done
+[mail_activity_board](mail_activity_board/) | 16.0.1.2.0 |  | Add Activity Boards
+[mail_activity_done](mail_activity_done/) | 16.0.1.3.0 |  | Mail Activity Done
 [mail_activity_partner](mail_activity_partner/) | 16.0.1.0.0 |  | Add Partner to Activities
 [mail_activity_plan](mail_activity_plan/) | 16.0.1.0.1 | [![victoralmau](https://github.com/victoralmau.png?size=30px)](https://github.com/victoralmau) | Mail activity plan
 [mail_activity_reminder](mail_activity_reminder/) | 16.0.1.0.0 |  | Reminder notifications about planned activities
 [mail_activity_reply_creator](mail_activity_reply_creator/) | 16.0.1.0.0 |  | Assign new to its creator
-[mail_activity_team](mail_activity_team/) | 16.0.1.0.1 |  | Add Teams to Activities
+[mail_activity_team](mail_activity_team/) | 16.0.1.0.3 |  | Add Teams to Activities
 [mail_activity_unlink_log](mail_activity_unlink_log/) | 16.0.1.0.0 |  | Leave a message when an activity is unlinked
 [mail_attach_existing_attachment](mail_attach_existing_attachment/) | 16.0.1.1.0 |  | Adding attachment on the object by sending this one
 [mail_attach_existing_attachment_account](mail_attach_existing_attachment_account/) | 16.0.1.0.1 |  | Module to use attach existing attachment for account module
