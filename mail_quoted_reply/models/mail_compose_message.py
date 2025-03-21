@@ -28,12 +28,15 @@ class MailComposeMessage(models.TransientModel):
 
     @api.depends("reply_body")
     def _compute_is_separate_body(self):
-        parameter_string = (
-            self.env["ir.config_parameter"]
-            .sudo()
-            .get_param("mail_quoted_reply.separate_reply_body", "")
-        )
-        self.is_separate_body = parameter_string.lower() not in ["", "false", "0"]
+        if self._context.get("is_quoted_reply", False):
+            parameter_string = (
+                self.env["ir.config_parameter"]
+                .sudo()
+                .get_param("mail_quoted_reply.separate_reply_body", "")
+            )
+            self.is_separate_body = parameter_string.lower() not in ["", "false", "0"]
+        else:
+            self.is_separate_body = False
 
     def get_mail_values(self, res_ids):
         results = super(MailComposeMessage, self).get_mail_values(res_ids)
