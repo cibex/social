@@ -56,6 +56,7 @@ addon | version | maintainers | summary
 [mail_post_defer](mail_post_defer/) | 16.0.1.1.2 | [![Yajo](https://github.com/Yajo.png?size=30px)](https://github.com/Yajo) | Faster and cancellable outgoing messages
 [mail_quoted_reply](mail_quoted_reply/) | 16.0.1.0.3 |  | Make a reply using a message
 [mail_restrict_follower_selection](mail_restrict_follower_selection/) | 16.0.1.0.0 |  | Define a domain from which followers can be selected
+[mail_restrict_send_button](mail_restrict_send_button/) | 16.0.1.0.1 |  | Security for Send Message Button on Chatter Area
 [mail_send_confirmation](mail_send_confirmation/) | 16.0.1.0.0 |  | Mail Send Confirmation
 [mail_show_follower](mail_show_follower/) | 16.0.1.2.1 | [![yajo](https://github.com/yajo.png?size=30px)](https://github.com/yajo) | Show CC document followers in mails.
 [mail_template_multi_attachment](mail_template_multi_attachment/) | 16.0.1.0.0 |  | Module who allows to generate multi attachments on an email template.
@@ -69,7 +70,7 @@ addon | version | maintainers | summary
 [mass_mailing_list_dynamic](mass_mailing_list_dynamic/) | 16.0.2.1.0 |  | Mass mailing lists that get autopopulated
 [mass_mailing_partner](mass_mailing_partner/) | 16.0.2.0.1 |  | Link partners with mass-mailing
 [mass_mailing_resend](mass_mailing_resend/) | 16.0.1.0.0 | [![pedrobaeza](https://github.com/pedrobaeza.png?size=30px)](https://github.com/pedrobaeza) | Resend mass mailings
-[mass_mailing_unique](mass_mailing_unique/) | 16.0.1.0.1 |  | Avoids duplicate mailing lists and contacts
+[mass_mailing_unique](mass_mailing_unique/) | 16.0.1.1.0 |  | Avoids duplicate mailing lists and contacts
 [outgoing_email_by_model](outgoing_email_by_model/) | 16.0.1.0.0 | [![mmequignon](https://github.com/mmequignon.png?size=30px)](https://github.com/mmequignon) | Outgoing Email by Model
 
 [//]: # (end addons)
