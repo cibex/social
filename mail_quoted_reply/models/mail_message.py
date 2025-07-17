@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from odoo import _, models
-from odoo.tools import format_datetime, html_sanitize
+from odoo.tools import format_datetime, html_sanitize, html2plaintext
 from odoo.tools.misc import html_escape
 
 
@@ -14,14 +14,16 @@ class MailMessage(models.Model):
         return html_sanitize(self.body)
 
     def _prep_quoted_reply_body(self):
+        if bool(html2plaintext(self.env.user.signature).strip()):
+            signature = f'{self.env.user.signature}<br /><br />'
+        else:
+            signature = ''
         return """
             <div style="margin: 0px; padding: 0px;">
             <p style="margin:0px 0 12px 0;box-sizing:border-box;">
             <br />
             </p>
             {signature}
-            <br />
-            <br />
             <blockquote style="padding-right:0px; padding-left:5px; border-left-color: #000;
             margin-left:5px; margin-right:0px;border-left-width: 2px; border-left-style:solid">
             {str_from}: {email_from}<br/>
@@ -38,7 +40,7 @@ class MailMessage(models.Model):
             # @TODO cannot be used until task https://odoo.cbx.c/web#id=165819&cids=1&menu_id=768&model=project.task&view_type=form is done
             # sanitizing the body removes comments and comments are still needed for some functionality regarding mail signature
             # body=self._get_sanitized_body()
-            signature=self.env.user.signature,
+            signature=signature,
             str_date=_("Date"),
             str_subject=_("Subject"),
             str_from=_("From"),
