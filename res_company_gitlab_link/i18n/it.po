@@ -1,6 +1,6 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* res_company_mastodon_link
+# 	* res_company_gitlab_link
 #
 msgid ""
 msgstr ""
@@ -16,12 +16,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.10.4\n"
 
-#. module: res_company_mastodon_link
-#: model:ir.model,name:res_company_mastodon_link.model_res_company
+#. module: res_company_gitlab_link
+#: model:ir.model,name:res_company_gitlab_link.model_res_company
 msgid "Companies"
 msgstr "Aziende"
 
-#. module: res_company_mastodon_link
-#: model:ir.model.fields,field_description:res_company_mastodon_link.field_res_company__social_mastodon
-msgid "Mastodon Account"
-msgstr "Account Mastodon"
+#. module: res_company_gitlab_link
+#: model:ir.model.fields,field_description:res_company_gitlab_link.field_res_company__social_gitlab
+msgid "Gitlab Account"
+msgstr "Account GitLab"

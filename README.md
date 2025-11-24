@@ -77,6 +77,7 @@ addon | version | maintainers | summary
 [mass_mailing_resend](mass_mailing_resend/) | 16.0.1.0.0 | <a href='https://github.com/pedrobaeza'><img src='https://github.com/pedrobaeza.png' width='32' height='32' style='border-radius:50%;' alt='pedrobaeza'/></a> | Resend mass mailings
 [mass_mailing_unique](mass_mailing_unique/) | 16.0.1.1.0 |  | Avoids duplicate mailing lists and contacts
 [outgoing_email_by_model](outgoing_email_by_model/) | 16.0.1.0.0 | <a href='https://github.com/mmequignon'><img src='https://github.com/mmequignon.png' width='32' height='32' style='border-radius:50%;' alt='mmequignon'/></a> | Outgoing Email by Model
+[res_company_gitlab_link](res_company_gitlab_link/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add gitlab url at company model
 [res_company_mastodon_link](res_company_mastodon_link/) | 16.0.1.0.0 | <a href='https://github.com/legalsylvain'><img src='https://github.com/legalsylvain.png' width='32' height='32' style='border-radius:50%;' alt='legalsylvain'/></a> | Add mastodon url at company model
 
 [//]: # (end addons)
