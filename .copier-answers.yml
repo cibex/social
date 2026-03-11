@@ -1,5 +1,5 @@
 # Do NOT update manually; changes here will be overwritten by Copier
-_commit: v1.29
+_commit: v1.38
 _src_path: gh:oca/oca-addons-repo-template
 ci: GitHub
 convert_readme_fragments_to_markdown: false
@@ -18,7 +18,8 @@ org_name: Odoo Community Association (OCA)
 org_slug: OCA
 rebel_module_groups:
 - mail_post_defer
-repo_description: '{''TODO'': ''add repo description.''}'
+repo_description: '{''TODO'': ''add repo description.''}Better integration of Odoo
+    with mail and social media'
 repo_name: social
 repo_slug: social
 repo_website: https://github.com/OCA/social
